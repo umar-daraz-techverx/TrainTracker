@@ -12,7 +12,7 @@ namespace TrainTracking
       // public static string connectionString = "Data Source = den1.mssql8.gear.host;  Initial Catalog= traintracker;  Uid=traintracker;  Pwd=Yy82!l6X6NU-; MultipleActiveResultSets=true";
     //  public static string connectionString = "Data Source = den1.mssql8.gear.host;  Initial Catalog= traintracker;  Uid=traintracker;  Pwd=Yy82!l6X6NU-;  MultipleActiveResultSets=true  ";
        //Data Source=den1.mssql8.gear.host;Initial Catalog=traintracker;User ID=traintracker
-
+    //   kjsdfndskjjsdf
        public static int USerID;
        public static string USerName;
        public static bool Admin;
