@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,12 +9,11 @@ namespace TrainTracking
 {
    public class ConnectDb
     {
-       public static string connectionString = "Data Source=.;Initial Catalog=traintracker;Integrated Security=True; MultipleActiveResultSets=true";
-      // public static string connectionString = "Data Source = den1.mssql8.gear.host;  Initial Catalog= traintracker;  Uid=traintracker;  Pwd=Yy82!l6X6NU-; MultipleActiveResultSets=true";
-    //  public static string connectionString = "Data Source = den1.mssql8.gear.host;  Initial Catalog= traintracker;  Uid=traintracker;  Pwd=Yy82!l6X6NU-;  MultipleActiveResultSets=true  ";
-       //Data Source=den1.mssql8.gear.host;Initial Catalog=traintracker;User ID=traintracker
-    //   kjsdfndskjjsdf
-       public static int USerID;
+		
+		
+		public static string connectionString()=> ConfigurationManager.ConnectionStrings["default"].ConnectionString;
+			
+	   public static int USerID;
        public static string USerName;
        public static bool Admin;
        public static int distanceOnTrack;
